@@ -34,7 +34,7 @@ my $row = $teng->search(
 );
 
 my $data_hash = Data_change::change($row);
-my ($scale,$shape) = weibull_paramater($data_hash);
+my ($scale,$shape) = Weibull_paramater::estimate_paramater($data_hash);
 
 print "scale=$scale ,, shape = $shape\n";
 
